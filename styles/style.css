@@ -138,11 +138,6 @@ body {
     border-radius: 10px;
 }
 
-#blogs {
-    background-color: #DD0000;
-    width: 160px;
-}
-
 .blog-area {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -381,5 +376,72 @@ body {
         font-size: 16px;
         color: #B9B9B9;
         padding-left: 25px;
+    }
+}
+
+/* upcomming match section styles */
+.upcoming-match-section {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.upcoming-match-area {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgba(0, 0, 0, 0.181);
+    border-radius: 5px;
+    margin-left: 10px;
+    width: 312px;
+    height: 242px;
+    margin-bottom: 10px;
+}
+
+.team-flag {
+    display: flex;
+    align-items: center;
+}
+
+.vs-class {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.team-name p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 400;
+    font-size: 16px;
+    color: #4D4D4D;
+}
+
+/* responsive design for upcomming match */
+
+/* for mobile device */
+@media screen and (max-width:688px) {
+    .upcoming-match-section {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .upcoming-match-area {
+        width: 100%;
+        margin-left: 0px;
+    }
+}
+
+/* for tab/medium device */
+@media screen and (min-width:689px) and (max-width:992px) {
+    .upcoming-match-section {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        margin-top: 100px;
+    }
+
+    .upcoming-match-area {
+        width: 90%;
+        padding: 5px;
     }
 }
