@@ -17,6 +17,10 @@ body {
     border-radius: 30px;
 }
 
+.top-area:hover {
+    background-color: rgba(255, 58, 58, 0.604);
+}
+
 .area-title {
     width: 100%;
     padding-left: 80px;
@@ -47,6 +51,7 @@ body {
 .live-button {
     padding-top: 20px;
 }
+
 
 .view-all-post {
     display: none;
